@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Thesquid.ink-Free-Flat-Sample-Bad-pig.ico" type="image/x-icon">
+    <style>
+        body { background-color: blanchedalmond;}
+    </style>
+    <title>Midias em html5</title>
+</head>
+<body> <h1> Imagem Dinâmica</h1>
+    <p> Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="img/médio.png" type="image/png">
+      <img src="img/Grande.png" alt="imagem flexivel">   
+    </picture>
+    <h1> Reproduzindo áudio em html5<h1>
+    <p> Vamos aprender a reproduzir áudios usando a tab áudio junto com os parametros controls e autoplay</p>
+    <audio src="audio/(I've Got A) Baby Sister - Reed Mathis.mp3" controls autoplay></audio>
+    <p> Outra forma de inserir áudio é usando source type</p>
+    <audio>
+       <source src="audio/(I've Got A) Baby Sister - Reed Mathis.mp3" type="audio/mpeg">
+       <source src="audio/(I've Got A) Baby Sister - Reed Mathis.mp3" type="audio/ogg">
+       <source src="audio/(I've Got A) Baby Sister - Reed Mathis.mp3" type="audio/wav">
+    </audio>
+    <p> Infelizmente meu navegador n reproduz áudio
+        <a href ="audio/(I've Got A) Baby Sister - Reed Mathis.mp3">CLique aqui para baixar o arquivo mp3</a>
+    </p>
+    <h2> Vamos inserir agora um vídeo</h2>
+    <p> Para inserir um vídeo em html5 é muito simples, basta usa a tab video </p>
+    <video width="300" controls loop poster="img/pequeno.png"> 
+        <source src="video/video-cake.m4v" type="video/mp4">
+        <source src="video/pexels-sunsetoned-7235780.mp4" type="video/mp4">
+        <p>Seu navegador n tem compatibilidade com o arquivo de vídeo</p>
+    </video>
+   <h1> Inserindo vídeos pelo youtube</h1>
+   <iframe 
+   width="250" height="315" src="https://www.youtube.com/embed/Qx8JIoNOz0Y?start=200"  
+   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</body>
+</html>
